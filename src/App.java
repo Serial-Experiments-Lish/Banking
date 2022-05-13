@@ -20,8 +20,7 @@ public class App {
             System.out.println("What is your account number?");
             double accountNum;
             accountNum = scanner.nextDouble();
-            if (accountNum < 0 ||
-                    accountNum > account.size() - 1) {
+            if (accountNum < 0 || accountNum > account.size() - 1) {
                 System.out.println("Sorry, I could not locate your account number.");
             } else {
                 mainMenu(account.get((int) accountNum));
